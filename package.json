@@ -14,7 +14,7 @@
     "test:coverage": "jest --coverage --collectCoverageFrom=src/**/*.js",
     "clean": "rimraf dist",
     "build": "rollup -c && uglifyjs dist/index.js -o dist/index.js",
-    "prepare": "yarn clean && yarn lint && yarn build"
+    "prepare": "yarn clean && yarn lint && yarn test && yarn build"
   },
   "files": [
     "dist",

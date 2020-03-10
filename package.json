@@ -1,0 +1,39 @@
+{
+  "name": "react-native-i18next-backend",
+  "version": "0.2.0",
+  "description": "Backend plugin for i18next that uses react-native-community's AsyncStorage.",
+  "main": "dist/index.js",
+  "repository": "git@github.com:maximlysenko/react-native-i18next-backend.git",
+  "author": "Max Lysenko",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "lint": "eslint src",
+    "test": "jest test",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage --collectCoverageFrom=src/**/*.js",
+    "clean": "rimraf dist",
+    "build": "rollup -c && uglifyjs dist/index.js -o dist/index.js",
+    "prepare": "yarn clean && yarn lint && yarn build"
+  },
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "eslint": "^6.8.0",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.0.3",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "uglify-es": "^3.3.9"
+  },
+  "peerDependencies": {
+    "@react-native-community/async-storage": "^1.8.1",
+    "i18next": "^19.3.2"
+  }
+}

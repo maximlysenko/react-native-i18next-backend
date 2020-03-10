@@ -1,6 +1,6 @@
 {
   "name": "react-native-i18next-backend",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Backend plugin for i18next that uses react-native-community's AsyncStorage.",
   "main": "dist/index.js",
   "repository": "git@github.com:maximlysenko/react-native-i18next-backend.git",
@@ -19,6 +19,11 @@
   "files": [
     "dist",
     "index.d.ts"
+  ],
+  "keywords": [
+    "i18next-backend",
+    "async-storage",
+    "react-native"
   ],
   "devDependencies": {
     "@babel/core": "^7.8.7",

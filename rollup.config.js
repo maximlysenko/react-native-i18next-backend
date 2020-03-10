@@ -1,11 +1,11 @@
 import babel from "rollup-plugin-babel"
-import commonjs from "rollup-plugin-commonjs"
+import commonjs from "@rollup/plugin-commonjs"
 
 export default {
 	input: "src/asyncStorageBackend.js",
 	output: {
 		file: "dist/index.js",
-		format: "es",
+		format: "cjs",
 	},
 	external: ["@react-native-community/async-storage"],
 	plugins: [
